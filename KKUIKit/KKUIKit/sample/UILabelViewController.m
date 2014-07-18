@@ -41,7 +41,7 @@
 
 - (void)configureView
 {
-    if (!_label2) {
+    if (_label2 != nil) {
         self.label2 = [[UILabel alloc]initWithFrame:CGRectMake(38, 200, 200, 90)];
         self.label2.center = self.view.center;
         self.label2.backgroundColor = [UIColor colorWithRed:40.0/255.0 green:80.0/255.0 blue:0.0/255.0 alpha:1.0]; // RGB값은 255로 나누어 넣는다.

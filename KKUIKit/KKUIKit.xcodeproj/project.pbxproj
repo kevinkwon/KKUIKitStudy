@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F491FDC197966580006931D /* UIButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F491FDB197966580006931D /* UIButtonViewController.xib */; };
+		4F491FDF197966750006931D /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F491FDE197966750006931D /* UIButtonViewController.m */; };
 		4FC0BC631974398700E59144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC0BC621974398700E59144 /* Foundation.framework */; };
 		4FC0BC651974398700E59144 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC0BC641974398700E59144 /* CoreGraphics.framework */; };
 		4FC0BC671974398700E59144 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC0BC661974398700E59144 /* UIKit.framework */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F491FDB197966580006931D /* UIButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UIButtonViewController.xib; path = sample/UIButtonViewController.xib; sourceTree = "<group>"; };
+		4F491FDD197966750006931D /* UIButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIButtonViewController.h; path = sample/UIButtonViewController.h; sourceTree = "<group>"; };
+		4F491FDE197966750006931D /* UIButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIButtonViewController.m; path = sample/UIButtonViewController.m; sourceTree = "<group>"; };
 		4FC0BC5F1974398700E59144 /* KKUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC0BC621974398700E59144 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4FC0BC641974398700E59144 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -169,6 +174,9 @@
 				4FD5424B1975937200CD1D81 /* UILabelViewController.h */,
 				4FD5424C1975937200CD1D81 /* UILabelViewController.m */,
 				4FD5424D1975937200CD1D81 /* UILabelViewController.xib */,
+				4F491FDD197966750006931D /* UIButtonViewController.h */,
+				4F491FDE197966750006931D /* UIButtonViewController.m */,
+				4F491FDB197966580006931D /* UIButtonViewController.xib */,
 			);
 			name = sample;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 			files = (
 				4FC0BC92197439B600E59144 /* Main.storyboard in Resources */,
 				4FC0BC6D1974398700E59144 /* InfoPlist.strings in Resources */,
+				4F491FDC197966580006931D /* UIButtonViewController.xib in Resources */,
 				4FC0BC751974398700E59144 /* Images.xcassets in Resources */,
 				4FD5424F1975937200CD1D81 /* UILabelViewController.xib in Resources */,
 			);
@@ -272,6 +281,7 @@
 			files = (
 				4FC0BCDC19743AB000E59144 /* SecondViewController.m in Sources */,
 				4FC0BC731974398700E59144 /* AppDelegate.m in Sources */,
+				4F491FDF197966750006931D /* UIButtonViewController.m in Sources */,
 				4FC0BC6F1974398700E59144 /* main.m in Sources */,
 				4FD5424E1975937200CD1D81 /* UILabelViewController.m in Sources */,
 				4FC0BCDF19743E6600E59144 /* MenuViewController.m in Sources */,

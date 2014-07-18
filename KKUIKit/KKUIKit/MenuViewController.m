@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "UILabelViewController.h"
+#import "UIButtonViewController.h"
 
 static NSString *const kNameKey = @"name";
 static NSString *const kViewControllerKey = @"viewController";
@@ -34,7 +35,8 @@ static NSString *const kViewControllerKey = @"viewController";
     
     // 메뉴 추가
     _menu = [NSMutableArray array];
-    [_menu addObject:[NSMutableDictionary dictionaryWithObject:@"UILabel" forKey:kNameKey]];
+    [_menu addObject:[NSMutableDictionary dictionaryWithObject:@"UILabel & UITextView" forKey:kNameKey]];
+    [_menu addObject:[NSMutableDictionary dictionaryWithObject:@"UIButton" forKey:kNameKey]];
     
     // 다음 화면에서 이화면으로 돌아올때 backButton의 이름을 미리 설정한다.
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"UIKit" style:UIBarButtonItemStylePlain target:nil action:nil];
@@ -102,6 +104,12 @@ static NSString *const kViewControllerKey = @"viewController";
         target = [[UILabelViewController alloc]initWithNibName:@"UILabelViewController" bundle:nil];
         [rowInfo setObject:target forKey:kViewControllerKey];
     }
+    else if (indexPath.row == 1) {
+        target = [[UIButtonViewController alloc]initWithNibName:@"UIButtonViewController" bundle:nil];
+        [rowInfo setObject:target forKey:kViewControllerKey];
+
+    }
+    
     [self.navigationController pushViewController:target animated:YES];
     return;
 }

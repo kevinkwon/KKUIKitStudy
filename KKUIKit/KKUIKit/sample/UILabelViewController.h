@@ -12,5 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (strong, nonatomic) UILabel *label2;
+@property (weak, nonatomic) IBOutlet UITextView *textView1;
+@property (strong, nonatomic) IBOutlet UITextView *textView2;
 
 @end
